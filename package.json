@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "electron-notes",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "electron": "^16.0.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^15.4.0"
   }
 }
