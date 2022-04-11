@@ -3,6 +3,7 @@ const { app, BrowserWindow, Tray, Menu } = require("electron");
 app.on("ready", () => {
   const mainWindow = new BrowserWindow({
     title: "UTSC Notes",
+    icon: "./pics/notes_icon.png",
   });
 
   mainWindow.maximize();
@@ -24,7 +25,7 @@ app.on("ready", () => {
 
   mainWindow.loadURL("https://rlqyl.github.io/");
 
-  let tray = new Tray("./pics/notes_icon.jpg");
+  let tray = new Tray("pics/notes_icon.png");
   const contextMenu = Menu.buildFromTemplate([
     {
       label: "Show App",
